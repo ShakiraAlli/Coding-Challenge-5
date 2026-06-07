@@ -43,6 +43,12 @@ function processPayroll(employee) {
     };
 }
 
+// Testing functions
+console.log(calculateBasePay(15, 40)); // Should return 600
+console.log(calculateOvertimePay(15, 45)); // Should return 112.5
+console.log(calculateTaxes(712.5)); // Should return 106.875
+console.log(processPayroll(employees[0])); // Should return payroll info for Alice Johnson
+
 // Step 6: Loop through the employee array and log the payroll information for each employee
 for (const employee of employees) {
     console.log(processPayroll(employee));
